@@ -16,7 +16,12 @@ class Bouine < Formula
   end
 
   def install
-    bin.install "bouine-v#{version}-darwin-#{Hardware::CPU.arch}" => "bouine"
+    on_arm do
+      bin.install "bouine-v#{version}-darwin-arm64" => "bouine"
+    end
+    on_intel do
+      bin.install "bouine-v#{version}-darwin-amd64" => "bouine"
+    end
   end
 
   test do
