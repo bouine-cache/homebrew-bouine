@@ -1,17 +1,17 @@
 class Bouine < Formula
   desc "Cloud-native HTTP cache in Go — RFC 9111 compliant, zero-alloc hit path"
   homepage "https://github.com/bouine-cache/bouine"
-  version "0.5.28"
+  version "0.5.29"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/bouine-cache/bouine/releases/download/v#{version}/bouine-v#{version}-darwin-arm64"
-      sha256 "6d0804306d17c71b30d99f3e6234caabe18b859735cfc6209473ecd2115349a3"
+      sha256 "df3032ee2d083c58e9e628718de746ac9bc38648397e9300767ba8495c834874"
     end
     on_intel do
       url "https://github.com/bouine-cache/bouine/releases/download/v#{version}/bouine-v#{version}-darwin-amd64"
-      sha256 "34614775c54911bcffa995c262695f5398bbd81852e9f8ec308dacb73fafcca5"
+      sha256 "84cdb5f72061e0415116e9b703b995541bc10a9598c5264fc8a7c90723cf42e5"
     end
   end
 
